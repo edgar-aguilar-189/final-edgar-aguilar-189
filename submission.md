@@ -33,7 +33,7 @@ Name: Edgar Aguilar
 
 7. What do the following Apache Directive do?
    1. SSLEngine: Allows us to enable or disable the SSL engine for 
-   2. ProxyEngine:                            <!-- answer -->
+   2. ProxyEngine: Toggles the usage of the SSL/TLS Protocol Engine for proxy. <!-- answer -->
    3. ProxyAddHeaders: Determines whether or not proxy related information should be passed to the backend sever through X-Forwarded-For, X-Forwarded-Host and X-Forwarded-Server HTTP headers. <!-- answer -->
    4. ProxyPass: Allows remote servers to be mapped in the space of the local server. <!-- answer -->
    5. ProxyPassReverse: This lets Apache httpd adjust the URL in the Location, Content-Location and URI headers on HTTP redirect responses. <!-- answer -->

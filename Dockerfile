@@ -14,6 +14,7 @@ RUN apt-get install apache2 -y
 RUN a2enmod userdir
 RUN a2enmod autoindex
 RUN a2enmod alias
+RUN a2enmod cgid
 RUN sudo groupadd cit384
 
 RUN sudo adduser user1
@@ -44,6 +45,10 @@ RUN sudo htpasswd -bc /home/submission.txt user1 passw0rd
 RUN sudo mkdir -p /var/www/html/final.cit384/public_html/submission
 COPY submission.md /var/www/html/final.cit384/public_html/submission
 COPY .htaccess /var/www/html/final.cit384/public_html/submission
+
+RUN sudo mkdir -p /home/user1/public_html/cgi-bin
+COPY script.cgi /home/user1/public_html/cgi-bin
+RUN sudo chmod a+x /home/user1/public_html/cgi-bin/script.cgi
 
 Label Maintainer: "edgar.aguilar.189@my.csun.edu"
 Expose 80

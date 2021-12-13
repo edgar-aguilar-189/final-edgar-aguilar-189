@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /home/submission.txt
+Require valid-user

@@ -45,7 +45,7 @@ Name: Edgar Aguilar
 9. What is the command to enable a new domain/vHost?
     * The command "a2ensite" enables a new vhost. <!-- answer -->
 10. What is the command to disable a new domain/vHost?
-    * The command "a2dissite" diables a vhost. <!-- answer -->
+    * The command "a2dissite" disables a vhost. <!-- answer -->
 11. What happens when a user enters a URL into the browser?
     * First the IP address is looked up by the DNS. The browser then sends an HTTP request to the server and the server sends back an HTTP response. The page is then rendered via HTML and additonal requests are sent by the browser for HTML objects. <!-- answer -->
 

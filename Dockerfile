@@ -31,7 +31,7 @@ COPY user2index.html /home/user2/public_html/index.html
 COPY mywebsite.cit384.conf /etc/apache2/sites-available
 COPY special.cit384.conf /etc/apache2/sites-available
 COPY final.cit384.conf /etc/apache2/sites-available
-COPY new.site.conf /etc/apache2/sites-available
+COPY my.site.conf /etc/apache2/sites-available
 
 RUN sudo mkdir -p /var/www//html/mywebsite.cit384/public_html
 COPY mywebsite.html /var/www/html/mywebsite.cit384/public_html/index.html
@@ -42,7 +42,7 @@ COPY special.html /var/www/html/special.cit384/public_html/index.html
 RUN a2ensite special.cit384.conf
 
 RUN a2ensite final.cit384.conf
-RUN a2ensite new.site.conf
+RUN a2ensite my.site.conf
 
 RUN sudo htpasswd -bc /home/submission.txt user1 passw0rd
 RUN sudo mkdir -p /var/www/html/final.cit384/public_html/submission

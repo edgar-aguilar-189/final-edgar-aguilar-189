@@ -1,0 +1,4 @@
+user1:$apr1$1i0gfzun$sdp9C3veCbHmtVARxqVel.
+
+user: user1
+pass: passw0rd

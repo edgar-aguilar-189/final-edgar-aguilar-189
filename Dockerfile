@@ -49,7 +49,8 @@ RUN a2ensite special.cit384.conf
 RUN a2ensite final.cit384.conf
 RUN a2ensite my.site.conf
 
-RUN sudo htpasswd -bc /home/submission.txt user1 passw0rd
+COPY submission.txt /home
+RUN htpasswd -n user1
 RUN sudo mkdir -p /var/www/html/final.cit384/public_html/submission
 COPY submission.md /var/www/html/final.cit384/public_html/submission
 COPY .htaccess /var/www/html/final.cit384/public_html/submission

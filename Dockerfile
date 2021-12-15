@@ -16,6 +16,11 @@ RUN a2enmod autoindex
 RUN a2enmod alias
 RUN a2enmod cgid
 RUN a2enmod ssl
+RUN a2enmod proxy
+RUN a2enmod proxy_http
+RUN a2enmod proxy_balancer
+RUN a2enmod proxy_hcheck
+RUN a2enmod lbmethod_byrequests
 RUN sudo groupadd cit384
 
 RUN sudo adduser user1
